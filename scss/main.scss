@@ -1,0 +1,33 @@
+$mainColor : #999;
+$bodyText: #000;
+$fontWeight : (
+    "light" : 300,
+    "reg" : 400,
+    "med" : 700,
+    "bold" : 900
+);
+$fontFamily : 'Roboto', sans-serif;
+$margin : 0 auto;
+body{
+    background-color: $mainColor;
+    color :$bodyText;
+    font-weight: map-get($fontWeight, med );
+    font-family: $fontFamily;
+}
+header{
+    background-color: $bodyText;
+    color: $mainColor;
+    h1{
+        font-size: 3.5em;
+        font-weight:map-get($fontWeight, light )
+    }
+    h2{
+        font-size: 2.5em;
+        
+    }
+
+}
+main{
+ width: 80%;
+ margin : $margin;
+}
